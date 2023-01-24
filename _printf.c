@@ -29,7 +29,11 @@ int _printf(const char *format, ...)
 			{
 				_putchar(va_arg(args, int));
 				char_count++;
+<<<<<<< HEAD
 				i += 2;
+=======
+				i++;
+>>>>>>> 9507c78cecfa1c73a0832971c19822eaf7a8944e
 			}
 			else if (format[i + 1] == 's')
 			{
@@ -40,13 +44,17 @@ int _printf(const char *format, ...)
 					_putchar(str[j]);
 					char_count++;
 				}
-				i += 2;
+				i++;
 			}
 			else if (format[i + 1] == '%')
 			{
 				_putchar('%');
 				char_count++;
+<<<<<<< HEAD
 				i += 2;
+=======
+				i++;
+>>>>>>> 9507c78cecfa1c73a0832971c19822eaf7a8944e
 			}
 		}
 		_putchar(format[i]);
