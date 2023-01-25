@@ -39,6 +39,12 @@ int _printf(const char *format, ...)
 				char_count++;
 				i += 2;
 			}
+			else if (format[i + 1] == 'd' || format[i + 1] == 'i')
+			{
+				print_number(va_arg(args, int));
+				char_count++;
+				i += 2;
+			}
 		}
 		_putchar(format[i]);
 		char_count++;
